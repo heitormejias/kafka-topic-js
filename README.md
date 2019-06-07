@@ -21,7 +21,7 @@ kafka-topic-js  <<parametros>>
 | ------ | ------ |
 | --t  --kafka_topic | Nome do tópico do kafka. (default:"topico" |
 | --s  --kafka_server | Endereço `host[:porta]` do servidor kafka. (default:"localhost:9092") |
-| --f  --producer_file_json | Nome do arquivo `.json` com as mensagens para publicar. (Utilizar o arquivo gerado no modo `consumer`) |
+| --f  --producer_file_json | Nome do arquivo `.json` com as mensagens para publicar. (arquivo gerado no modo `consumer`) |
 | --h  --help | Parametro para mostrar o help. |
 
 **Exemplos de uso:**
@@ -31,6 +31,7 @@ kafka-topic-js  -t=topico -s=localhost:9092
 ```sh
 kafka-topic-js  -t=topico -s=localhost:9092 -f=./topico-send.json 
 ```
+
 ## Exemplo do arquivo "producer_file_json": 
 ```json 
  {
