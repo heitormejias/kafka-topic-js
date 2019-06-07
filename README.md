@@ -16,10 +16,11 @@ npm install -g
 kafka-topic-js  <<parametros>>  
 ```
 ***Esta aplicação aceita os seguintes parametros:*** 
+
 | Parâmetro | Descrição |
 | ------ | ------ |
 | --t  --kafka_topic | Parametro para passar o nome do tópico. (default:"topico" |
-| --s  --kafka_server | Parametro para passar o host[:porta] do servidor kafka. ****(default:"localhost:9092" |
+| --s  --kafka_server | Parametro para passar o host[:porta] do servidor kafka. default:"localhost:9092" |
 | --f  --producer_file_json | Parametro para passar o nome do arquivo json com as mensagens para publicar. (* Opcional) |
 | --h  --help | Parametro para mostrar o help. |
 

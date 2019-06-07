@@ -20,7 +20,7 @@ kafka-topic-js  <<parametros>>
 | ------ | ------ |
 | --t  --kafka_topic | Parametro para passar o nome do tópico. (default:"topico" |
 | --s  --kafka_server | Parametro para passar o host[:porta] do servidor kafka. ****(default:"localhost:9092" |
-| --f  --producer_file_json | Parametro para passar o nome do arquivo json com as mensagens para publicar. (* Opcional) |
+| --f  --producer_file_json | Parametro para passar o nome do arquivo json com as mensagens para publicar. (Apenas para o modo `producer`) |
 | --h  --help | Parametro para mostrar o help. |
 
 **Exemplos de uso:**
