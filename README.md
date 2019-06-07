@@ -9,19 +9,18 @@ npm install -g
 
 **Modo de execuções:** 
 - Como `consumer` é o default. Executa e fica consumindo o topico do kafka e gera o arquivo ` <<NOME_TOPICO>>.json ` com as mensagens consumidas.
-- Como `producer` passe o parametro `--producer_file_json=exemplo_topico.json` ou `--f=exemplo_topico.json`
+- Como `producer` passe o parametro `--producer_file_json=exemplo_topico.json` ou `--f=exemplo_topico.json`. Quando executado, lê as mensagens do arquivo passado no parâmetro e publica no topico do kafka. (Deve/Pode usar o arquivo gerado no modo `consumer`)
 
 **Modo de usar:** 
 ```sh
 kafka-topic-js  <<parametros>>  
 ```
 ***Esta aplicação aceita os seguintes parametros:*** 
-
 | Parâmetro | Descrição |
 | ------ | ------ |
-| --t  --kafka_topic | Parametro para passar o nome do tópico. (default:"topico" |
-| --s  --kafka_server | Parametro para passar o host[:porta] do servidor kafka. default:"localhost:9092" |
-| --f  --producer_file_json | Parametro para passar o nome do arquivo json com as mensagens para publicar. (* Opcional) |
+| --t  --kafka_topic | Nome do tópico do kafka. (default:"topico" |
+| --s  --kafka_server | Endereço `host[:porta]` do servidor kafka. (default:"localhost:9092") |
+| --f  --producer_file_json | Nome do arquivo `.json` com as mensagens para publicar. (Utilizar o arquivo gerado no modo `consumer`) |
 | --h  --help | Parametro para mostrar o help. |
 
 **Exemplos de uso:**
