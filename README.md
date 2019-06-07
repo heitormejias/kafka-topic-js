@@ -17,11 +17,12 @@ kafka-topic-js  <<parametros>>
 ```
 
 ***Esta aplicação aceita os seguintes parametros:*** 
+
 | Parâmetro | Descrição |
 | ------ | ------ |
 | --t  --kafka_topic | Nome do tópico do kafka. (default:"topico" |
 | --s  --kafka_server | Endereço `host[:porta]` do servidor kafka. (default:"localhost:9092") |
-| --f  --producer_file_json | Nome do arquivo `.json` com as mensagens para publicar. (arquivo gerado no modo `consumer`) |
+| --f  --producer_file_json | Nome do arquivo `.json` com as mensagens para publicar. (gerado no modo `consumer`) |
 | --h  --help | Parametro para mostrar o help. |
 
 **Exemplos de uso:**
